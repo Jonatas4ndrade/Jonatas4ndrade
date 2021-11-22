@@ -3,7 +3,7 @@
 <body>
 <button onclick="typeWriter(txt1, txt2)">Click me</button>
 
-<p id="demo"></p>
+<p id="testDriven"></p>
 
 <script>
 let lastTimeFlag = 0; //Required to end recursion at Unwriter
@@ -14,7 +14,7 @@ var speed = 50;
 
 function typeWriter(text, text2) {
   if (currentChar < text.length) {
-    document.getElementById("demo").innerHTML += text.charAt(currentChar);
+    document.querySelector('#testDriven').textContent += text.charAt(currentChar);
     currentChar++;
 	//recursive call after.05 secs
     setTimeout(()=> {typeWriter(text,text2)}, speed); 
@@ -26,7 +26,7 @@ function typeWriter(text, text2) {
 function Unwriter(text, next = "") {
   if (text.length > 0) {
   	text = text.slice(0,-1);
-    document.getElementById("demo").innerHTML = text;
+    document.querySelector('#testDriven').textContent += text.charAt(currentChar);
     setTimeout(()=> {Unwriter(text)}, speed);
   } else {
 	lastTimeFlag += 1;
