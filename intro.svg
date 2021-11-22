@@ -5,7 +5,7 @@
 
 <p id="testDriven"></p>
 
-<script>
+<script type="text/javascript">
 let lastTimeFlag = 0; //Required to end recursion at Unwriter
 var currentChar = 0;
 var txt1= "Can\'t help yourself when it comes to testing?";
@@ -13,7 +13,7 @@ var txt2 = "Nor can I. That's how robust systems are made, after all."
 var speed = 50;
 
 function typeWriter(text, text2) {
-  if (currentChar \< text.length) {
+  if (currentChar < text.length) {
     document.querySelector('#testDriven').textContent += text.charAt(currentChar);
     currentChar++;
 	//recursive call after.05 secs
