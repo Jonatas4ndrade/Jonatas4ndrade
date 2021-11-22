@@ -13,7 +13,7 @@ var txt2 = "Nor can I. That's how robust systems are made, after all."
 var speed = 50;
 
 function typeWriter(text, text2) {
-  if (currentChar < text.length) {
+  if (currentChar \< text.length) {
     document.querySelector('#testDriven').textContent += text.charAt(currentChar);
     currentChar++;
 	//recursive call after.05 secs
