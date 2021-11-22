@@ -5,7 +5,7 @@
 
 <p id="testDriven"></p>
 
-<script xlink:href="typedHeader.js">
+<script type="text/javascript" src="./typedHeader.js"></script>
 </script>
 	
 </body>
