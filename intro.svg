@@ -3,6 +3,9 @@
     <section xmlns="http://www.w3.org/1999/xhtml">
       
 <style>
+figure{
+     box-sizing: border-box;
+}
 div {
     justify-content: center;
     align:center;
@@ -115,6 +118,7 @@ section {
 	100%{opacity:100%;position:relative;}
 }
 .container {
+	box-sizing: border-box;
 	position: absolute;
 	top: 0;
 	left: 0;
