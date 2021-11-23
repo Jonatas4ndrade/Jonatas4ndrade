@@ -64,7 +64,8 @@ section {
 	text-align: center;
 	animation: fadeIn 5s linear;
 	animation-fill-mode: forwards;
-	h1 {
+}
+.movingGradienth1 {
 		margin: 0 auto; 
 		color: #fff;
 		white-space: nowrap; 
@@ -82,8 +83,8 @@ section {
 		text-fill-color: transparent;
 		animation: textclip 5s linear infinite !important;
 		display: inline-block;
-		}
 }
+
 
 @keyframes textclip {
 	0%  {opacity:100%;}
