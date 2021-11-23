@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
+  <foreignObject width="800" height="100">
     <section xmlns="http://www.w3.org/1999/xhtml">
       
 <style>
@@ -106,7 +106,7 @@ section {
         <h1>I'm an administrative officer,</h1>
       </div>
       <div class="typewriter slower2">
-        <h1>but I fell in love for tech ❤️</h1>
+        <h1>but I fell in love with tech ❤️</h1>
       </div>
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
