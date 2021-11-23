@@ -1,12 +1,7 @@
-<section>
-  <div class="typewriter">
-    <h1>The cat and the hat are both really crazy.</h1>
-  </div>
-  <div class="typewriter slower1">
-    <h1>They are in the same institution.</h1>
-  </div>
-</section>
-
+<svg fill="none" viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <section xmlns="http://www.w3.org/1999/xhtml">
+      
 <style>
 section {
     padding-top: 5em;
@@ -49,3 +44,13 @@ section {
     50% { border-color: orange; }
   }
 </style>
+      
+      <div class="typewriter">
+        <h1>The cat and the hat are both really crazy.</h1>
+      </div>
+      <div class="typewriter slower1">
+        <h1>They are in the same institution.</h1>
+      </div>
+    </section>
+  </foreignObject>
+</svg>
