@@ -118,6 +118,18 @@ section {
 	10% {opacity:100%;}
 	100%{opacity:100%;position:relative;}
 }
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 </style>
       
       <div class="typewriter">
@@ -132,9 +144,11 @@ section {
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
+      <div class="container">	
       <div class="halfBlack slower4 !important"> 
 	<h1>LIVE LONG 🖖 PROSPER</h1>
 	<h1>LIVE LONG 🖖 PROSPER</h1>
+      </div>
       </div>
     </section>
   </foreignObject>	
