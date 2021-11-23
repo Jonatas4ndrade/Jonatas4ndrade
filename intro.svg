@@ -1,36 +1,57 @@
-<button onclick="typeWriter(txt1, txt2)">Click me</button>
+<section>
+  <div class="typewriter">
+    <h1>The cat and the hat are both really crazy.</h1>
+  </div>
+  <div class="typewriter slower1">
+    <h1>They are in the same institution.</h1>
+  </div>
+</section>
+// Original typing effect (altough heavily tweaked) by:
+// https://codepen.io/geoffgraham/pen/jrWwWM?editors=1100
 
-<p id="testDriven"></p>
-
-<script type="text/javascript"><![CDATA[
-let lastTimeFlag = 0; //Required to end recursion at Unwriter
-var currentChar = 0;
-var txt1= "Can\'t help yourself when it comes to testing?";
-var txt2 = "Nor can I. That's how robust systems are made, after all."
-var speed = 50;
-
-function typeWriter(text, text2) {
-  if (currentChar < text.length) {
-    document.querySelector('#testDriven').textContent += text.charAt(currentChar);
-    currentChar++;
-	//recursive call after.05 secs
-    setTimeout(()=> {typeWriter(text,text2)}, speed); 
-  } else {
-	//Text printed. Starts deleting after 1 second.
-    setTimeout(()=> {Unwriter(text, text2)}, 1000);
+<style>
+/* GLOBAL STYLES */
+section {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
   }
-}
-function Unwriter(text, next = "") {
-  if (text.length > 0) {
-  	text = text.slice(0,-1);
-    document.querySelector('#testDriven').textContent += text.charAt(currentChar);
-    setTimeout(()=> {Unwriter(text)}, speed);
-  } else {
-	lastTimeFlag += 1;
-    	if (lastTimeFlag == 1){
-        currentChar = 0;
-        setTimeout(()=> {typeWriter(txt2)}, 750)
-        }
+  
+  /* DEMO-SPECIFIC STYLES */
+  .slower1 h1{
+    z-index:9 !important;
+    animation-delay: 10s !important;
+     }
+  
+  .typewriter h1 {
+    opacity:0;
+    position: absolute;
+    color: #000;
+    font-family: monospace;
+    overflow: hidden; /*hides the content until container is large enough */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 10s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-fill-mode: forwards;
   }
-}
-]]></script>
+  
+  /* The typing effect */
+  @keyframes typing {
+    0% { width: 0; position:relative; opacity:100%;}
+    40% { width: 100% }
+    70% { width: 100% }
+    95% { width: 0%; opacity:100%;}
+    99% {position:relative;}
+    100%{ width: 0%; opacity:0%; position: absolute;}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+</style>
