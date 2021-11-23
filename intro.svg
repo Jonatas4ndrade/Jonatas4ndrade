@@ -15,7 +15,7 @@ section {
      }
   
   .typewriter h1 {
-    font-size:45px !important;
+    font-size:2.5em !important;
     opacity:0;
     position: absolute;
     color: #000;
