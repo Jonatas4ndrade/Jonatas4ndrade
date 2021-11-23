@@ -25,7 +25,6 @@ section {
     animation-delay: 30s !important;
     z-index:9 !important;
     position: absolute;
-    opacity:0%;
     }
   
   .typewriter h1 {
@@ -63,11 +62,9 @@ section {
 
 .halfBlack {
 	 text-align: center;
-	 animation:fade-in 5s;
 	 animation-fill-mode: forwards;
 	 font-family: "Inter", sans-serif;
 	 position: absolute;
-	 display: flex;
 	 align-items: center;
 	 justify-content: center;	 
 }
