@@ -13,6 +13,18 @@ section {
     z-index:9 !important;
     animation-delay: 7.5s !important;
      }
+  .slower2 h1{
+    z-index:9 !important;
+    animation-delay: 15s !important;
+     }
+  .slower3 h1{
+    z-index:9 !important;
+    animation-delay: 22.5s !important;
+     }  
+  .slower4 h1{
+    z-index:9 !important;
+    animation-delay: 29.5s !important;
+     }
   
   .typewriter h1 {
     font-size:2.5em !important;
@@ -49,7 +61,13 @@ section {
       <div class="typewriter">
         <h1>Hello there, I'm Jonatas.</h1>
       </div>
-      <div class="typewriter slower1">
+      <div class="typewriter slower1"">
+        <h1>I'm an administrative officer,</h1>
+      </div>
+      <div class="typewriter slower2">
+        <h1>but I fell in love for tech ❤️</h1>
+      </div>
+      <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
     </section>
