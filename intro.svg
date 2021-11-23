@@ -30,7 +30,7 @@ section {
 		}
   
   .typewriter h1 {
-    font-size: 3em !important;
+    font-size: 2.6em !important;
     opacity:0;
     position: absolute;
     color: #000;
