@@ -30,7 +30,7 @@ section {
 		}
   
   .typewriter h1 {
-    font-size:2.4em !important;
+    font-size: 3em !important;
     opacity:0;
     position: absolute;
     color: #000;
@@ -113,7 +113,7 @@ section {
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
-      <div class="movingGradient slower4">
+      <div class="movingGradient slower4 !important">
 	<h1>Live long 🖖 prosper</h1>
       </div>
     </section>
