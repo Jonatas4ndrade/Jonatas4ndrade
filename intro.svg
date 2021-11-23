@@ -56,7 +56,7 @@ section {
   
   @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #57d75b; }
+    50% { border-color: #25abe8; }
   }
   
   @font-face {
@@ -72,7 +72,7 @@ section {
 	text-align: center;
 	h1 {
 		color: #fff;
-		font-size: 3em;
+		font-size: 3em !important;
 		text-transform: uppercase;
 		font-weight: 700;
 		font-family: "Josefin Sans", sans-serif;
@@ -85,7 +85,7 @@ section {
 		text-fill-color: transparent;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: textclip 5s linear infinite;
+		animation: textclip 5s linear infinite !important;
 		display: inline-block;
 	}
 }
@@ -112,7 +112,7 @@ section {
         <h1>Make yourself at home, and...</h1>
       </div>
       <div class="movingGradient slower4">
-	      <h1>Live long 🖖 prosper</h1>
+	<h1>Live long 🖖 prosper</h1>
       </div>
     </section>
   </foreignObject>
