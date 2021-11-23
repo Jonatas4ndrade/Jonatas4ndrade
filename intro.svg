@@ -141,12 +141,12 @@ section {
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
-      <div class="container">	
-      <div class="halfBlack slower4 !important"> 
+      <figure class="container">	
+      <figure class="halfBlack slower4 !important"> 
 	<h1>LIVE LONG 🖖 PROSPER</h1>
 	<h1>LIVE LONG 🖖 PROSPER</h1>
-      </div>
-      </div>
+      </figure>
+      </figure>
     </section>
   </foreignObject>	
 </svg>
