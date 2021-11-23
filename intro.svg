@@ -36,11 +36,11 @@ section {
     animation-delay: 17s !important;
      }  
   .slower4 {
-    animation: fadeIn 5s linear;
+    animation: fadeIn 3s linear;
     animation-delay: 24.5s !important;
-    z-index:9 !important;
     position: absolute;
     opacity:0;
+    animation-fill-mode: forwards;
     }
   
   .typewriter h1 {
@@ -75,23 +75,22 @@ section {
   }
     
 .halfBlack {
-	 animation-fill-mode: forwards;
 	 font-family: "Inter", sans-serif;
 	 position: absolute;
-   display:flex;
+         display:flex;
 	 align-items: center;
 	 justify-content: center;
    
    }
  .halfBlack h1 {
 	 filter: sepia(1) saturate(0);
-	 font-size: 2em;
+	 font-size: 3em;
 	 font-weight: 900;
 	 background-color: #000;
 	 color: #fff;
 	 display: block;
 	 padding: 0.5em;
-   white-space: nowrap;
+   	 white-space: nowrap;
 }
  h1:nth-child(2) {
 	 position: absolute;
@@ -111,7 +110,7 @@ section {
 
 @keyframes fadeIn {
 	0%  {opacity:5%; position:relative;}
-	35% {opacity:100%;}
+	50% {opacity:100%;}
 	100%{opacity:100%;position:relative;}
 }
 .container {
