@@ -65,10 +65,9 @@ section {
 
 .halfBlack {
 	text-align: center;
-	animation: fadeIn 5s linear;
 	animation-fill-mode: forwards;
 	font-family: "Inter", sans-serif;
-	position: relative;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
