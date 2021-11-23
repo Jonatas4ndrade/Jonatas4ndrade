@@ -29,7 +29,7 @@ section {
      }
   
   .typewriter h1 {
-    font-size:2.5em !important;
+    font-size:2.4em !important;
     opacity:0;
     position: absolute;
     color: #000;
@@ -71,6 +71,7 @@ section {
 .movingGradient {
 	text-align: center;
 	h1 {
+		margin: 0 auto; 
 		color: #fff;
 		font-size: 3em !important;
 		text-transform: uppercase;
