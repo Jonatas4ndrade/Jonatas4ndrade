@@ -60,29 +60,40 @@ section {
     50% { border-color: #095fab; }
   }
     
-.movingGradient {
+
+	<!--- Original concept (lightly tweaked) by Håvard Brynjulfsen --->
+
+.halfBlack {
 	text-align: center;
 	animation: fadeIn 5s linear;
 	animation-fill-mode: forwards;
-}
-.movingGradient.h1 {
-		margin: 0 auto; 
+	font-family: "Inter", sans-serif;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h1 {
+		filter: sepia(1) saturate(0);
+		font-size: 3em;
+		font-weight: 900;
+		background-color: #000;
 		color: #fff;
-		white-space: nowrap; 
-		font-size: 3em !important;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-family: sans-serif;
-		background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
-		background-size: auto auto;
-		background-clip: border-box;
-		background-size: 200% auto;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		text-fill-color: transparent;
-		animation: textclip 5s linear infinite !important;
-		display: inline-block;
+		display: block;
+		padding: .5em;
+	}
+	h1:nth-child(2) {
+	position: absolute;
+	background-color: #fff;
+	color: #000;
+	clip-path: inset(-1% -1% 50% -1%); // Added the negative values to prevent icky "bleed" in Chrome
+	}
+	p {
+		font-size: 2vw;
+		font-weight: 900;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
 }
 
 
@@ -114,7 +125,7 @@ section {
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
-      <div class="movingGradient slower4 !important">
+      <div class="halfBlack slower4 !important">
 	<h1>Live long 🖖 prosper</h1>
       </div>
     </section>
