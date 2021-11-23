@@ -3,28 +3,48 @@
     <section xmlns="http://www.w3.org/1999/xhtml">
       
 <style>
+div {
+    justify-content: center;
+    align:center;
+    align-content: center;
+    text-align:center;
+    display:inline;
+}
+
 section {
     padding-top: 1em;
-    display: flex;
+    display: grid;
     justify-content: center;
-}
- 
-  .slower1 h1{
-    z-index:-9 !important;
+    
+    flex-direction:column;
+    align-items: flex-center;
+    
+}		
+
+	.slower1 h1{
+    z-index:9 !important;
+     animation: 
+      typing 9.5s steps(30, end),
+      blink-caret .5s step-end infinite !important;
     animation-delay: 7.5s !important;
      }
   .slower2 h1{
     z-index:9 !important;
-    animation-delay: 15s !important;
-     }
+    animation: 
+      typing 6.5s steps(30, end),
+      blink-caret .5s step-end infinite !important;
+    animation-delay: 10.5s !important;
+    }
   .slower3 h1{
     z-index:9 !important;
-    animation-delay: 22.5s !important;
+    animation-delay: 17s !important;
      }  
   .slower4 {
-    animation-delay: 30s !important;
+    animation: fadeIn 5s linear;
+    animation-delay: 24.5s !important;
     z-index:9 !important;
     position: absolute;
+    opacity:0;
     }
   
   .typewriter h1 {
@@ -34,7 +54,7 @@ section {
     color: #000;
     font-family: monospace;
     overflow: hidden; 
-    border-right: .15em solid orange; 
+    border-right: .15em solid #57d75b; 
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .20em;
@@ -58,16 +78,15 @@ section {
     50% { border-color: #095fab; }
   }
     
-<!-- Original concept (lightly tweaked) by Håvard Brynjulfsen -->
-
 .halfBlack {
-	 text-align: center;
 	 animation-fill-mode: forwards;
 	 font-family: "Inter", sans-serif;
 	 position: absolute;
+   display:flex;
 	 align-items: center;
-	 justify-content: center;	 
-}
+	 justify-content: center;
+   
+   }
  .halfBlack h1 {
 	 filter: sepia(1) saturate(0);
 	 font-size: 3em;
@@ -76,18 +95,13 @@ section {
 	 color: #fff;
 	 display: block;
 	 padding: 0.5em;
+   white-space: nowrap;
 }
  h1:nth-child(2) {
 	 position: absolute;
 	 background-color: #fff;
 	 color: #000;
 	 clip-path: inset(-1% -1% 50% -1%);
-}
- p {
-	 font-size: 2vw;
-	 font-weight: 900;
-	 margin-bottom: 1em;
-	 text-align: center;
 }
 
 @keyframes textclip {
