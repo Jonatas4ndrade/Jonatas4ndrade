@@ -97,6 +97,7 @@ section {
 	 background-color: #fff;
 	 color: #000;
 	 clip-path: inset(-1% -1% 50% -1%);
+	 -webkit-clip-path:inset(-1% -1% 50% -1%);
 }
 
 @keyframes textclip {
