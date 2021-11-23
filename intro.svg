@@ -11,7 +11,7 @@ section {
  
   .slower1 h1{
     z-index:9 !important;
-    animation-delay: 10s !important;
+    animation-delay: 7.5s !important;
      }
   
   .typewriter h1 {
@@ -33,7 +33,7 @@ section {
   
   @keyframes typing {
     0% { width: 0; position:relative; opacity:100%;}
-    40% { width: 100% }
+    25% { width: 100% }
     70% { width: 100% }
     95% { width: 0%; opacity:100%;}
     99% {position:relative;}
@@ -42,7 +42,7 @@ section {
   
   @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: orange; }
+    50% { border-color: #57d75b; }
   }
 </style>
       
