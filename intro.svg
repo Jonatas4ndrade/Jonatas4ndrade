@@ -22,14 +22,6 @@ div {
   text-transform: uppercase;
   font-weight: 700;
   font-family: sans-serif;
-  background-image: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg") !important;
-  background-size: 300% auto;
-  text-fill-color: transparent;
-  background-clip: text !important;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 20s linear infinite;
-  display: inline-block;
 }
 section {
   padding-top: 1em;
@@ -50,7 +42,7 @@ section {
 }
 .slower4 {
   animation: fadeIn 3s linear;
-  animation-delay: 23s !important;
+  animation-delay: 3s !important;
   position: absolute;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -106,6 +98,13 @@ section {
   text-align: center;
   animation: fadeIn 5s linear;
   animation-fill-mode: forwards;
+  background-image: url("https://images.alphacoders.com/935/935315.png") !important;
+  background-size: 400% auto;
+  animation: textclip 60s linear infinite;
+  border: solid;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  
 }
 @keyframes textclip {
   0% {
@@ -113,14 +112,14 @@ section {
     position: relative;
     opacity: 100%;
   }
-  50% {
-    background-position: 75% center;
+  53% {
+    background-position: 100% center;
   }
-  50% {
-    background-position: 75% center;
+  55% {
+    background-position: 100% center;
   }
   100% {
-    background-position: 150% center;
+    background-position: 0% center;
     opacity: 100;
     position: relative;
   }
