@@ -85,7 +85,7 @@ div {
 		 border-color: transparent;
 	}
 	 50% {
-		 border-color: #095fab;
+		 border-color: #57d75b;
 	}
 }
  .movingGradient {
