@@ -93,7 +93,7 @@ section {
 .movingGradient {
   text-align: center;
   
-  background-image: url("dSpace.png") !important;
+  background-image: url("./dSpace.png") !important;
   background-size: 400% auto;
   
   border: solid;
