@@ -10,15 +10,13 @@ div {
 	 display: inline;
 }
  .signal {
-	 background: none;
-	 -webkit-text-fill-color: black;
-	 filter: sepia(1) saturate(0);
+   z-index: 1;
+   opacity:100;
+   filter: invert() grayscale(70%) contrast(100%) brightness(150%) saturate(100%) hue-rotate(-20deg);
+   -webkit-text-fill-color: black;
+   -webkit-background-clip: text;
+ 
  }
-  {
-	 background: none;
-	 -webkit-text-fill-color: black;
-	 filter: sepia(1) saturate(0);  
-}
  section {
 	 padding-top: 1em;
 	 display: grid;
@@ -26,23 +24,20 @@ div {
 	 flex-direction: column;
 }
  .slower1 h1 {
-	 z-index: 9 !important;
 	 animation: typing 9.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
 	 animation-delay: 6.5s !important;
 }
  .slower2 h1 {
-	 z-index: 9 !important;
 	 animation: typing 6.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
 	 animation-delay: 9.5s !important;
 }
  .slower3 h1 {
-	 z-index: 9 !important;
 	 animation: typing 5.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
    animation-delay: 16s !important;
 }
  .slower4 {
 	 animation: fadeIn 3s linear;
-	 animation-delay: 22.5s !important;
+	 animation-delay: 25s !important;
 	 position: absolute;
 	 opacity: 0;
 	 animation-fill-mode: forwards;
@@ -140,14 +135,14 @@ div {
 }
  @keyframes fadeIn {
 	 0% {
-		 opacity: 5%;
+		 opacity: 5;
 		 position: relative;
 	}
 	 50% {
-		 opacity: 100%;
+		 opacity: 95;
 	}
 	 100% {
-		 opacity: 100%;
+		 opacity: 95;
 		 position: relative;
 	}
 }
@@ -164,7 +159,6 @@ div {
 	 justify-content: center;
 	 flex-direction: column;
 }
- 
 </style>
    
       <div class="typewriter">
