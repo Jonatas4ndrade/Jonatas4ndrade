@@ -16,10 +16,11 @@ div {
    -webkit-text-fill-color: black;
    -webkit-background-clip: text;
     animation-name: waving;  
-    animation-duration: 12s;     /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 100% 250%;    /* Pivot around the bottom-left palm */
-  display: inline-block;
+    animation-duration: 12s;
+    animation-iteration-count: infinite; 
+    transform-origin: 100% 250%;  
+    display: inline-block;
+    animation-delay: 28s;
  
  }
  section {
