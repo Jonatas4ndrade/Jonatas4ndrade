@@ -9,11 +9,7 @@ div {
   text-align: center;
   display: inline;
 }
-.signal {
-  background: none;
-  -webkit-text-fill-color: black;
-  filter: sepia(1) saturate(0);
-}
+
 .hollow {
   margin: 0 auto;
   color: #fff;
@@ -96,11 +92,11 @@ section {
 }
 .movingGradient {
   text-align: center;
-  animation: fadeIn 5s linear;
-  animation-fill-mode: forwards;
+  
   background-image: url("https://images.alphacoders.com/935/935315.png") !important;
   background-size: 400% auto;
   animation: textclip 60s linear infinite;
+  animation-fill-mode: forwards;
   border: solid;
   padding: 10px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
