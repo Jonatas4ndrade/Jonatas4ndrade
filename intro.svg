@@ -38,7 +38,7 @@ section {
 }
 .slower4 {
   animation: fadeIn 3s linear;
-  animation-delay: 3s !important;
+  animation-delay: 23s !important;
   position: absolute;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -159,7 +159,7 @@ section {
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
-      <figure class="movingGradient !important"> 
+      <figure class="movingGradient slower4"> 
 	<h1>#ToDo</h1>
       </figure>
       
