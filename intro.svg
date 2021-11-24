@@ -3,9 +3,6 @@
     <section xmlns="http://www.w3.org/1999/xhtml">
       
 <style>
-figure{
-     box-sizing: border-box;
-}
 div {
     justify-content: center;
     align:center;
@@ -13,6 +10,12 @@ div {
     text-align:center;
     display:inline;
 }
+span{
+background: none;
+-webkit-text-fill-color: black;
+filter: sepia(1) saturate(0);
+}
+
 section {
     padding-top: 1em;
     display: grid;
@@ -25,22 +28,22 @@ section {
      animation: 
       typing 9.5s steps(30, end),
       blink-caret .5s step-end infinite !important;
-    animation-delay: 7.5s !important;
+    animation-delay: 6.5s !important;
      }
   .slower2 h1{
     z-index:9 !important;
     animation: 
       typing 6.5s steps(30, end),
       blink-caret .5s step-end infinite !important;
-    animation-delay: 10.5s !important;
+    animation-delay: 9.5s !important;
     }
   .slower3 h1{
     z-index:9 !important;
-    animation-delay: 17s !important;
+    animation-delay: 16s !important;
      }  
   .slower4 {
     animation: fadeIn 3s linear;
-    animation-delay: 24.5s !important;
+    animation-delay: 23s !important;
     position: absolute;
     opacity:0;
     animation-fill-mode: forwards;
@@ -58,7 +61,7 @@ section {
     margin: 0 auto; 
     letter-spacing: .20em;
     animation: 
-      typing 7.5s steps(30, end),
+      typing 6.5s steps(30, end),
       blink-caret .5s step-end infinite;
     animation-fill-mode: forwards;
   }
@@ -77,39 +80,37 @@ section {
     50% { border-color: #095fab; }
   }
     
-.halfBlack {
-	 font-family: "Inter", sans-serif;
-	 position: absolute;
-         display:flex;
-	 align-items: center;
-	 justify-content: center;
-   
-   }
- .halfBlack h1 {
-	 filter: sepia(1) saturate(0);
-	 font-size: 3em;
-	 font-weight: 900;
-	 background-color: #000;
-	 color: #fff;
-	 display: block;
-	 padding: 0.5em;
-   	 white-space: nowrap;
+.movingGradient {
+	text-align: center;
+	animation: fadeIn 5s linear;
+	animation-fill-mode: forwards;
+	h1 {
+    //filter: sepia(1) saturate(99%);
+		margin: 0 auto; 
+		color: #fff;
+		white-space: nowrap; 
+		font-size: 4em !important;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: sans-serif;
+		background: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg");
+		background-size: 300% auto;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		animation: textclip 20s linear infinite;
+		display: inline-block;
+		}
 }
- h1:nth-child(2) {
-	 position: absolute;
-	 background-color: #fff;
-	 color: #000;
-	 clip-path: inset(-1% -1% 50% -1%);
-	 -webkit-clip-path:inset(-1% -1% 50% -1%);
-}
+	
+  
 
 @keyframes textclip {
-	0%  {opacity:100%;}
-	0% {background-position: 200% center;position:relative;}
-	5% {background-position: 200% center;}
-	50% {background-position: 0% center;}
-	95% {background-position: 200% center;}
-	100% {background-position: 200% center;opacity:100%;position:relative;}
+	0% {background-position: 0% center;position:relative; opacity:100%;}
+	50% {background-position: 75% center;}
+  50% {background-position: 75% center;}
+	100% {background-position: 150% center;opacity:100%;position:relative;}
 }
 
 @keyframes fadeIn {
@@ -118,7 +119,6 @@ section {
 	100%{opacity:100%;position:relative;}
 }
 .container {
-	box-sizing: border-box;
 	position: absolute;
 	top: 0;
 	left: 0;
