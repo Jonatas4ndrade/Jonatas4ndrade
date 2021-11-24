@@ -9,7 +9,7 @@
   <img align="left" alt="Jonatas' LinkedIn" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
 </a>
 
-<br>
+<br><br><br>
 <p>Full-time IT student for the moment | Systems Analysis and Development (Associate Degree, final semester).  
 
 I'm now brushing up the front-end, studying the MERN (MongoDB, Express, React, Node.js) stack and reviewing Python.
