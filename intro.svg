@@ -95,8 +95,7 @@ section {
   
   background-image: url("https://images.alphacoders.com/935/935315.png") !important;
   background-size: 400% auto;
-  animation: textclip 60s linear infinite;
-  animation-fill-mode: forwards;
+  
   border: solid;
   padding: 10px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
