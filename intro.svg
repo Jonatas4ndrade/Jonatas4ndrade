@@ -41,8 +41,8 @@ div {
    animation-delay: 16s !important;
 }
  .slower4 {
-	 animation: fadeIn 3s linear;
-	 animation-delay: 25s !important;
+	 animation: fadeIn 5s linear;
+	 animation-delay: 23s !important;
 	 position: absolute;
 	 opacity: 0;
 	 animation-fill-mode: forwards;
