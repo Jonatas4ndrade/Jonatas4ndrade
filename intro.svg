@@ -4,109 +4,120 @@
       
 <style>
 div {
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  display: inline;
+	 justify-content: center;
+	 align-content: center;
+	 text-align: center;
+	 display: inline;
 }
-.signal {
-  background: none;
-  -webkit-text-fill-color: black;
-  filter: sepia(1) saturate(0);
+ .signal {
+	 background: none;
+	 -webkit-text-fill-color: black;
+	 filter: sepia(1) saturate(0);
+ }
+  {
+	 background: none;
+	 -webkit-text-fill-color: black;
+	 filter: sepia(1) saturate(0);  
 }
-.hollow {
-  margin: 0 auto;
-  color: #fff;
-  white-space: nowrap;
-  font-size: 4em !important;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: sans-serif;
+ section {
+	 padding-top: 1em;
+	 display: grid;
+	 justify-content: center;
+	 flex-direction: column;
 }
-section {
-  padding-top: 1em;
-  display: grid;
-  justify-content: center;
-  flex-direction: column;
+ .slower1 h1 {
+	 z-index: 9 !important;
+	 animation: typing 9.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
+	 animation-delay: 6.5s !important;
 }
-.slower1 h1 {
-  animation: typing 9.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
-  animation-delay: 6.5s !important;
+ .slower2 h1 {
+	 z-index: 9 !important;
+	 animation: typing 6.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
+	 animation-delay: 9.5s !important;
 }
-.slower2 h1 {
-  animation: typing 6.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
-  animation-delay: 9.5s !important;
+ .slower3 h1 {
+	 z-index: 9 !important;
+	 animation-delay: 16s !important;
 }
-.slower3 h1 {
-  animation-delay: 16s !important;
+ .slower4 {
+	 animation: fadeIn 3s linear;
+	 animation-delay: 23s !important;
+	 position: absolute;
+	 opacity: 0;
+	 animation-fill-mode: forwards;
 }
-.slower4 {
-  animation: fadeIn 3s linear;
-  animation-delay: 23s !important;
-  position: absolute;
-  opacity: 0;
-  animation-fill-mode: forwards;
+ .typewriter h1 {
+	 font-size: 2.6em !important;
+	 opacity: 0;
+	 position: absolute;
+	 color: #000;
+	 font-family: monospace;
+	 overflow: hidden;
+	 border-right: 0.15em solid #57d75b;
+	 white-space: nowrap;
+	 margin: 0 auto;
+	 letter-spacing: 0.2em;
+	 animation: typing 6.5s steps(30, end), blink-caret 0.5s step-end infinite;
+	 animation-fill-mode: forwards;
 }
-.typewriter h1 {
-  font-size: 2.6em !important;
-  opacity: 0;
-  position: absolute;
-  color: #000;
-  font-family: monospace;
-  overflow: hidden;
-  border-right: 0.15em solid #57d75b;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.2em;
-  animation: typing 6.5s steps(30, end), blink-caret 0.5s step-end infinite;
-  animation-fill-mode: forwards;
+ @keyframes typing {
+	 0% {
+		 width: 0;
+		 position: relative;
+		 opacity: 100%;
+	}
+	 25% {
+		 width: 100%;
+	}
+	 75% {
+		 width: 100%;
+	}
+	 95% {
+		 width: 0%;
+		 opacity: 100%;
+	}
+	 99% {
+		 position: relative;
+	}
+	 100% {
+		 width: 0%;
+		 opacity: 0;
+		 position: absolute;
+	}
 }
-@keyframes typing {
-  0% {
-    width: 0;
-    position: relative;
-    opacity: 100;
-  }
-  25% {
-    width: 100%;
-  }
-  75% {
-    width: 100%;
-  }
-  95% {
-    width: 0%;
-    opacity: 100;
-  }
-  99% {
-    position: relative;
-  }
-  100% {
-    width: 0%;
-    opacity: 0;
-    position: absolute;
-  }
+ @keyframes blink-caret {
+	 from, to {
+		 border-color: transparent;
+	}
+	 50% {
+		 border-color: #095fab;
+	}
 }
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #095fab;
-  }
+ .movingGradient {
+	 text-align: center;
+	 animation: fadeIn 5s linear;
+	 animation-fill-mode: forwards;
 }
-.movingGradient {
-  text-align: center;
-  animation: fadeIn 5s linear;
-  animation-fill-mode: forwards;
-  background-image: linear-gradient(to right, #010103 0%, 2.614138461649418%, #07042F 5.228276923298836%, 8.100147359073162%, #000002 10.972017794847488%, 13.475699350237846%, #041C3E 15.979380905628204%, 19.108983874320984%, #07144B 22.238586843013763%, 25.184094160795212%, #010E31 28.12960147857666%, 30.927833914756775%, #023467 33.72606635093689%, 35.125184059143066%, #F7F8FA 36.52430176734924%, 37.88659870624542%, #6B9AB4 39.2488956451416%, 41.27393215894699%, #31658D 43.29896867275238%, 45.434461534023285%, #194979 47.56995439529419%, 50.47864317893982%, #052363 53.38733196258545%, 57.40058720111847%, #010103 61.41384243965149%, 70.72901129722595%, #000427 80.04418015480042%, 90.02209007740021%, #000000 100%);
+ .movingGradient h1 {
+	 margin: 0 auto;
+	 color: #fff;
+	 white-space: nowrap;
+	 font-size: 4em !important;
+	 text-transform: uppercase;
+	 font-weight: 700;
+	 font-family: sans-serif;
+	 background-image: /* Gradient in Hex */
+linear-gradient(to right, #010103 0%, 2.614138461649418%, #160857 5.228276923298836%, 8.100147359073162%, #000002 10.972017794847488%, 14.9484533816576%, #041C3E 18.924888968467712%, 21.944034844636917%, #07144B 24.963180720806122%, 28.497790545225143%, #010E31 32.032400369644165%, 32.80559629201889%, #539DC2 33.578792214393616%, 34.75699573755264%, #F7F8FA 35.93519926071167%, 37.592047452926636%, #6B9AB4 39.2488956451416%, 41.27393215894699%, #31658D 43.29896867275238%, 45.434461534023285%, #194979 47.56995439529419%, 50.47864317893982%, #052363 53.38733196258545%, 57.40058720111847%, #010103 61.41384243965149%, 70.72901129722595%, #230674 80.04418015480042%, 90.02209007740021%, #000000 100%);
   background-size: 500% auto;
-  animation: textclip 10s linear infinite;
-  border: solid;
-  padding: 10px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   
+	 background-clip: text;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 text-fill-color: transparent;
+	 animation: textclip 10s linear infinite;
+	 display: inline-block;
 }
-@keyframes textclip {
+ @keyframes textclip {
   0% {
     background-position: 0% center;
     position: relative;
@@ -127,31 +138,31 @@ section {
     position: relative;
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 5;
-    position: relative;
-  }
-  50% {
-    opacity: 100;
-  }
-  100% {
-    opacity: 100;
-    position: relative;
-  }
+ @keyframes fadeIn {
+	 0% {
+		 opacity: 5%;
+		 position: relative;
+	}
+	 50% {
+		 opacity: 100%;
+	}
+	 100% {
+		 opacity: 100%;
+		 position: relative;
+	}
 }
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+ .container {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 height: 100%;
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-direction: column;
 }
 </style>
    
