@@ -15,6 +15,11 @@ div {
    filter: invert() grayscale(70%) contrast(100%) brightness(150%) saturate(100%) hue-rotate(-20deg);
    -webkit-text-fill-color: black;
    -webkit-background-clip: text;
+    animation-name: waving;  
+    animation-duration: 12s;     /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 100% 250%;    /* Pivot around the bottom-left palm */
+  display: inline-block;
  
  }
  section {
@@ -108,7 +113,7 @@ div {
 	 -webkit-background-clip: text;
 	 -webkit-text-fill-color: transparent;
 	 text-fill-color: transparent;
-	 animation: textclip 10s linear infinite;
+	 animation: textclip 12s linear infinite;
    annimation-direction:alternate;
 	 display: inline-block;
 }
@@ -122,13 +127,13 @@ div {
     background-position: 15% center;
   }
   50% {
-    background-position: 300% center;
+    background-position: 200% center;
   }
   75% {
-    background-position: 350% center;
+    background-position: 250% center;
   }
   100% {
-    background-position: 200% center;
+    background-position: 100% center;
     opacity: 100;
     position: relative;
   }
@@ -146,6 +151,32 @@ div {
 		 position: relative;
 	}
 }
+
+@keyframes waving {
+   0% {
+    transform: translate3d(0, 0, 0);
+  }
+   5% {
+    transform: translate3d(0, -0.1em, 0);
+  }6%{
+     transform: translate3d(0, -0.5em, 0);
+  }
+   9% {
+    transform: translate3d(0, 0, 0);
+  }
+   10% { transform: rotate( 0.0deg);
+        filter: invert() grayscale(70%) contrast(150%) brightness(150%) saturate(100%) hue-rotate(-50deg);}
+   12.50% { transform: rotate(14.0deg);}
+   15%    { transform: rotate(-8.0deg) }
+   17.50% { transform: rotate(14.0deg);}
+   20%    { transform: rotate(-4.0deg);}
+   22.50% { transform: rotate(10.0deg);}
+   24.99% { filter: invert() grayscale(70%) contrast(150%) brightness(100%) saturate(150%) hue-rotate(-50deg);}
+   35%   { transform: rotate( 0.0deg); 
+           filter: invert() grayscale(70%) contrast(100%) brightness(150%) saturate(100%) hue-rotate(-20deg);}
+   40%% {transform: rotate( 0.0deg)}  
+   100% {transform: rotate( 0.0deg)}
+}
  .container {
 	 position: absolute;
 	 top: 0;
@@ -159,6 +190,7 @@ div {
 	 justify-content: center;
 	 flex-direction: column;
 }
+ 
 </style>
    
       <div class="typewriter">
