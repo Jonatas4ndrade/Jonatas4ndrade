@@ -37,12 +37,12 @@ div {
 }
  .slower3 h1 {
 	 z-index: 9 !important;
-	 animation-delay: 16s !important;
-	 animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite !important;
-	}
+	 animation: typing 5.5s steps(30, end), blink-caret 0.5s step-end infinite !important;
+   animation-delay: 16s !important;
+}
  .slower4 {
-	 animation: fadeIn 5s linear;
-	 animation-delay: 21.5s !important;
+	 animation: fadeIn 3s linear;
+	 animation-delay: 22.5s !important;
 	 position: absolute;
 	 opacity: 0;
 	 animation-fill-mode: forwards;
@@ -107,19 +107,14 @@ div {
 	 text-transform: uppercase;
 	 font-weight: 700;
 	 font-family: sans-serif;
-	 background-image:linear-gradient(to right, #010103 0%, 2.614138461649418%, #160857 5.228276923298836%, 8.100147359073162%, #000002 10.972017794847488%, 14.9484533816576%, #041C3E 18.924888968467712%, 21.944034844636917%, #07144B 24.963180720806122%, 28.497790545225143%, #010E31 32.032400369644165%, 32.80559629201889%, #539DC2 33.578792214393616%, 34.75699573755264%, #F7F8FA 35.93519926071167%, 37.592047452926636%, #6B9AB4 39.2488956451416%, 41.27393215894699%, #31658D 43.29896867275238%, 45.434461534023285%, #194979 47.56995439529419%, 50.47864317893982%, #052363 53.38733196258545%, 57.40058720111847%, #010103 61.41384243965149%, 70.72901129722595%, #230674 80.04418015480042%, 90.02209007740021%, #000000 100%);
-  	 background-size: 500% auto;
-  	 animation: textclip 10s linear infinite;
- 	 border: solid;
-  	 padding: 5px;
-  	 box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-
-  
+	 background-image: linear-gradient(to right, #010103 0%, 2.614138461649418%, #160857 5.228276923298836%, 8.100147359073162%, #000002 10.972017794847488%, 14.9484533816576%, #041C3E 18.924888968467712%, 21.944034844636917%, #07144B 24.963180720806122%, 28.497790545225143%, #010E31 32.032400369644165%, 32.80559629201889%, #539DC2 33.578792214393616%, 34.75699573755264%, #F7F8FA 35.93519926071167%, 37.592047452926636%, #6B9AB4 39.2488956451416%, 41.27393215894699%, #31658D 43.29896867275238%, 45.434461534023285%, #194979 47.56995439529419%, 50.47864317893982%, #052363 53.38733196258545%, 57.40058720111847%, #010103 61.41384243965149%, 70.72901129722595%, #230674 80.04418015480042%, 90.02209007740021%, #000000 100%);
+   background-size: 500% auto;
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -webkit-text-fill-color: transparent;
 	 text-fill-color: transparent;
 	 animation: textclip 10s linear infinite;
+   annimation-direction:alternate;
 	 display: inline-block;
 }
  @keyframes textclip {
@@ -169,6 +164,7 @@ div {
 	 justify-content: center;
 	 flex-direction: column;
 }
+ 
 </style>
    
       <div class="typewriter">
@@ -187,7 +183,7 @@ div {
       <figure class="movingGradient slower4"> 
 	<h1 class="hollow">LIVE LONG <span class="signal">🖖</span> AND PROSPER</h1>
       </figure>
-      <figure class="container">
+      </figure>
     </section>
   </foreignObject>	
 </svg>
