@@ -4,6 +4,7 @@
 
 <object id="svg-object" data="./intro.svg" type="image/svg+xml"></object>
 
+<p> cache reloaded</p>
 
 ![Curious People](https://visitor-badge.glitch.me/badge?page_id=Jonatas4ndrade.Jonatas4ndrade-badge&left_color=red&right_color=green&left_text=Curious%20people%20so%20far: ) 
 
