@@ -22,10 +22,10 @@ div {
   text-transform: uppercase;
   font-weight: 700;
   font-family: sans-serif;
-  background: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg");
+  background-image: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg") !important;
   background-size: 300% auto;
   text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 20s linear infinite;
@@ -151,7 +151,6 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
 </style>
    
       <div class="typewriter">
