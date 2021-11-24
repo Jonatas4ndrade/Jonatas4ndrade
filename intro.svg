@@ -38,10 +38,11 @@ div {
  .slower3 h1 {
 	 z-index: 9 !important;
 	 animation-delay: 16s !important;
-}
+	 animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite !important;
+	}
  .slower4 {
 	 animation: fadeIn 3s linear;
-	 animation-delay: 23s !important;
+	 animation-delay: 21.5s !important;
 	 position: absolute;
 	 opacity: 0;
 	 animation-fill-mode: forwards;
@@ -178,9 +179,11 @@ linear-gradient(to right, #010103 0%, 2.614138461649418%, #160857 5.228276923298
       <div class="typewriter slower3">
         <h1>Make yourself at home, and...</h1>
       </div>
+      <figure class="container">	
       <figure class="movingGradient slower4"> 
 	<h1 class="hollow">LIVE LONG <span class="signal">🖖</span> AND PROSPER</h1>
       </figure>
+      <figure class="container">
     </section>
   </foreignObject>	
 </svg>
