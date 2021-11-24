@@ -59,7 +59,7 @@ div {
 	 0% {
 		 width: 0;
 		 position: relative;
-		 opacity: 100%;
+		 opacity: 100;
 	}
 	 25% {
 		 width: 100%;
@@ -69,7 +69,7 @@ div {
 	}
 	 95% {
 		 width: 0%;
-		 opacity: 100%;
+		 opacity: 100;
 	}
 	 99% {
 		 position: relative;
@@ -85,7 +85,7 @@ div {
 		 border-color: transparent;
 	}
 	 50% {
-		 border-color: #57d75b;
+		 border-color: red;
 	}
 }
  .movingGradient {
@@ -101,7 +101,7 @@ div {
 	 text-transform: uppercase;
 	 font-weight: 700;
 	 font-family: sans-serif;
-	 background: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg");
+	 background-image: url("https://www.teahub.io/photos/full/19-198666_2560x1600-horsehead-nebula-space-nebula-wallpapers-nebula-wallpaper.jpg");
 	 background-size: 300% auto;
 	 background-clip: text;
 	 -webkit-background-clip: text;
@@ -114,7 +114,7 @@ div {
 	 0% {
 		 background-position: 0% center;
 		 position: relative;
-		 opacity: 100%;
+		 opacity: 100;
 	}
 	 50% {
 		 background-position: 75% center;
@@ -124,20 +124,20 @@ div {
 	}
 	 100% {
 		 background-position: 150% center;
-		 opacity: 100%;
+		 opacity: 100;
 		 position: relative;
 	}
 }
  @keyframes fadeIn {
 	 0% {
-		 opacity: 5%;
+		 opacity: 5;
 		 position: relative;
 	}
 	 50% {
-		 opacity: 100%;
+		 opacity: 100;
 	}
 	 100% {
-		 opacity: 100%;
+		 opacity: 100;
 		 position: relative;
 	}
 }
@@ -154,7 +154,6 @@ div {
 	 justify-content: center;
 	 flex-direction: column;
 }
- 
 </style>
    
       <div class="typewriter">
