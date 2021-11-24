@@ -168,9 +168,8 @@ section {
         <h1>Make yourself at home, and...</h1>
       </div>
       <figure class="movingGradient slower4"> 
-	<h1>#ToDo</h1>
+	<h1 class=hollow>LIVE LONG <span class="signal">🖖</span> AND PROSPER</h1>
       </figure>
-      
     </section>
   </foreignObject>	
 </svg>
