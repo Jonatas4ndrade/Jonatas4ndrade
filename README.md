@@ -8,7 +8,7 @@
 
 ![Curious People](https://visitor-badge.glitch.me/badge?page_id=Jonatas4ndrade.Jonatas4ndrade-badge&left_color=red&right_color=green&left_text=Curious%20Visitors: )
 
-## Our latest mess? ##
+## Wanna know our latest mess? ##
 <p>Full-time IT student for the moment | Systems Analysis and Development (Associate Degree, final semester).  
 
 I'm now brushing up the front-end, studying the MERN (MongoDB, Express, React, Node.js) stack and reviewing Python.
